@@ -9,4 +9,5 @@ import java.util.List;
  */
 public interface AnimalRepository extends Remote{
     List<Animal> findAll() throws RemoteException;
+    Animal findByName(String nameToFind) throws RemoteException;
 }
